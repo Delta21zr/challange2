@@ -1,0 +1,65 @@
+Informe de Análisis de Evasión de Clientes (Churn) – Telecom X
+🔹 Introducción
+
+El objetivo de este análisis es identificar patrones y factores asociados a la evasión de clientes (Churn) en la compañía Telecom X. Comprender quiénes abandonan el servicio y por qué permitirá implementar estrategias de retención más efectivas, optimizando la satisfacción del cliente y los ingresos de la empresa.
+
+🔹 Limpieza y Tratamiento de Datos
+
+Los datos fueron obtenidos desde la API de Telecom X en formato JSON y procesados en Pandas. Los pasos principales incluyeron:
+
+Importación de datos y conversión a DataFrame.
+
+Exploración de columnas y tipos de datos para entender la estructura del dataset.
+
+Identificación de valores ausentes, duplicados e inconsistencias, asegurando que todas las variables fueran completas y coherentes.
+
+Creación de nuevas columnas, como Cuentas_Diarias, calculadas a partir de la facturación mensual.
+
+Estandarización y transformación:
+
+Variables categóricas convertidas a binarias (Sí/No → 1/0).
+
+Renombrado de columnas para mayor claridad.
+
+🔹 Análisis Exploratorio de Datos
+Distribución de Evasión (Churn)
+
+Clientes que permanecieron: ~X%
+
+Clientes que abandonaron: ~Y%
+
+Gráficos de barras y pastel mostraron claramente la proporción de clientes que permanecen y los que se dieron de baja.
+
+Evasión según Variables Categóricas
+
+Analizamos género, tipo de contrato, método de pago, presencia de dependientes y servicios contratados.
+
+Hallazgos relevantes:
+
+Contratos de tipo Mes a Mes tienen mayor tasa de evasión.
+
+Clientes con servicios de streaming presentan patrones de abandono más marcados.
+
+Método de pago Electronic Check muestra una mayor probabilidad de Churn.
+
+Distribución de Variables Numéricas
+
+Se analizaron variables como Meses_Contrato, Cobro_Mensual y Cuentas_Diarias.
+
+Observaciones:
+
+Clientes con menor antigüedad (Meses_Contrato bajo) tienden a abandonar más.
+
+Cobro mensual extremo (muy bajo o muy alto) se relaciona con mayor evasión.
+
+La facturación diaria muestra diferencias claras entre quienes permanecen y los que abandonan.
+
+🔹 Conclusiones e Insights
+
+La evasión está concentrada en clientes con contratos cortos y pagos electrónicos.
+
+Los servicios adicionales (como streaming o soporte online) pueden influir en la permanencia del cliente.
+
+La variable tiempo de contrato y tipo de contrato son factores clave para predecir Churn.
+
+Existe una proporción significativa de clientes en riesgo, lo que indica que Telecom X puede mejorar estrategias de retención.
